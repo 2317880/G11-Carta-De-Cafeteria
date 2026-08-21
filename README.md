@@ -16,7 +16,7 @@ Sirve como herramienta de presentación digital para el negocio, permitiendo que
 
 * **Dueños y encargados del local:** Para gestionar y actualizar la oferta de manera sencilla.
 
-* **Desarrolladores web:** Como proyecto de aprendizaje para practicar flujos de trabajo con Git (ramas `main`, `produccion` y `testing`).
+* **Desarrolladores web:** Como proyecto de aprendizaje para practicar flujos de trabajo con Git (ramas `master`, `produccion` y `testing`).
 ## Guía para un nuevo miembro del equipo
 
 Esta guía explica los pasos básicos que debe seguir un nuevo integrante para comenzar a trabajar en el proyecto y mantener un flujo de trabajo ordenado con el resto del equipo.
