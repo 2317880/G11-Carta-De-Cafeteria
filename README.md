@@ -1,14 +1,14 @@
-# Carta de Cafetería
+# Carta de "Rita Cafetería"
 
 ## Descripción
 
 ### 1- ¿Qué hace este proyecto?
 
-Este proyecto consiste en el desarrollo de una página web HTML que muestra la carta digital de una cafetería. La página presenta de manera clara y atractiva los productos disponibles (bebidas calientes, frías, pastelería y snacks), junto con sus precios y descripciones breves.
+Este proyecto consiste en el desarrollo de una página web que muestra la carta digital de la cafeteria "Rita". La página presenta de manera clara y atractiva los productos disponibles (bebidas calientes, frías, pastelería y snacks), junto con sus precios y descripciones breves.
 
 ### 2- ¿Para qué sirve?
 
-Sirve como herramienta de presentación digital para el negocio, permitiendo que los clientes consulten la oferta desde sus dispositivos móviles o computadoras, sin necesidad de contacto físico con menús impresos. Facilita la actualización de precios y productos de forma ágil.
+Sirve como herramienta de presentación digital para el negocio, permitiendo que los clientes consulten la oferta, sin necesidad de contacto físico con menús impresos. Facilita la actualización de precios y productos de forma ágil.
 
 ### 3- ¿Quién es el público objetivo?
 
