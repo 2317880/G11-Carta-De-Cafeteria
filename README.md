@@ -16,7 +16,7 @@ Sirve como herramienta de presentación digital para el negocio, permitiendo que
 
 * **Dueños y encargados del local:** Para gestionar y actualizar la oferta de manera sencilla.
 
-* **Desarrolladores web:** Como proyecto de aprendizaje para practicar flujos de trabajo con Git (ramas `main`, `produccion` y `testing`).
+* **Desarrolladores web:** Como proyecto de aprendizaje para practicar flujos de trabajo con Git (ramas `master`, `produccion` y `testing`).
 ## Guía para un nuevo miembro del equipo
 
 Esta guía explica los pasos básicos que debe seguir un nuevo integrante para comenzar a trabajar en el proyecto y mantener un flujo de trabajo ordenado con el resto del equipo.
@@ -39,27 +39,10 @@ cd NOMBRE_DEL_REPOSITORIO
 
 El proyecto utiliza tres ramas principales:
 
-* **main:** contiene la versión estable del proyecto.
+* **main:** donde trabajan los desarrolladores.
 * **testing:** se utiliza para integrar y probar los cambios antes de llevarlos a producción.
 * **production:** contiene la versión destinada a producción.
 
-Para desarrollar una nueva funcionalidad o realizar una modificación, se debe crear una rama propia a partir de la rama correspondiente.
-
-Por ejemplo:
-
-```bash
-git checkout testing
-git pull
-git checkout -b feature/nombre-funcionalidad
-```
-
-Una vez realizados los cambios:
-
-```bash
-git add .
-git commit -m "tipo: descripción breve del cambio"
-git push origin feature/nombre-funcionalidad
-```
 
 ### 3- Estructura de los commits
 
