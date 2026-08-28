@@ -39,27 +39,10 @@ cd NOMBRE_DEL_REPOSITORIO
 
 El proyecto utiliza tres ramas principales:
 
-* **main:** contiene la versión estable del proyecto.
+* **main:** donde trabajan los desarrolladores.
 * **testing:** se utiliza para integrar y probar los cambios antes de llevarlos a producción.
 * **production:** contiene la versión destinada a producción.
 
-Para desarrollar una nueva funcionalidad o realizar una modificación, se debe crear una rama propia a partir de la rama correspondiente.
-
-Por ejemplo:
-
-```bash
-git checkout testing
-git pull
-git checkout -b feature/nombre-funcionalidad
-```
-
-Una vez realizados los cambios:
-
-```bash
-git add .
-git commit -m "tipo: descripción breve del cambio"
-git push origin feature/nombre-funcionalidad
-```
 
 ### 3- Estructura de los commits
 
