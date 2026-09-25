@@ -7,30 +7,20 @@ body {
     color: #3e2723;
     font-family: Arial, Helvetica, sans-serif;
 }
-header {
-    background-color: #4e342e;
-    color: #fff8f0;
-    text-align: center;
-    padding: 50px 20px;
-}
-header h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-header h2 {
-    color: #d7a86e;
-    font-size: 22px;
-    margin-bottom: 20px;
-}
-header p {
-    max-width: 700px;
-    margin: auto;
-    line-height: 1.6;
-}
 main {
     width: 90%;
     max-width: 1100px;
     margin: 40px auto;
+}
+.presentacion-carta {
+    background-color: #fffaf5;
+    margin-bottom: 35px;
+    padding: 20px 30px;
+    border: 1px solid #dfcbb8;
+    border-radius: 10px;
+    color: #6d5147;
+    line-height: 1.6;
+    text-align: center;
 }
 .categoria {
     background-color: #fffaf5;
@@ -82,14 +72,6 @@ footer p {
     margin: 8px;
 }
 @media (max-width: 700px) {
-
-    header h1 {
-        font-size: 36px;
-    }
-
-    header h2 {
-        font-size: 18px;
-    }
 
     main {
         width: 95%;
