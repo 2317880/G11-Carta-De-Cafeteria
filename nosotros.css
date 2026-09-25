@@ -1,4 +1,43 @@
-nosotros {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5eee6;
+    color: #3e2723;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #4e342e;
+    color: #fff8f0;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+}
+
+nav a {
+    color: #fff8f0;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d7a86e;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+.nosotros {
     background-color: #fffaf5;
     padding: 30px;
     margin-bottom: 25px;
@@ -19,7 +58,7 @@ nosotros {
     margin-bottom: 15px;
 }
 .nosotros ul {
-padding-left: 25px;
+    padding-left: 25px;
     color: #6d5147;
 }
 .nosotros li {
@@ -29,14 +68,36 @@ padding-left: 25px;
     border-color: #a1887f;
     background-color: #f8f1ea;
 }
+
+footer {
+    background-color: #3e2723;
+    color: #f5eee6;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 8px;
+}
+
 @media (max-width: 700px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    main {
+        width: 95%;
+    }
+
     .nosotros {
-       padding: 20px;
+        padding: 20px;
     }
+
     .nosotros h2 {
-       font-size: 25px;
+        font-size: 25px;
     }
+
     .nosotros p {
-       text-align: left;
+        text-align: left;
     }
 }
