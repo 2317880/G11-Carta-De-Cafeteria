@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f5eee6;
+    color: #3e2723;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #4e342e;
+    color: #fff8f0;
+    text-align: center;
+    padding: 45px 20px;
+}
+
+header h1 {
+    margin: 0 0 10px;
+    font-size: 48px;
+}
+
+header p {
+    margin: 0 0 25px;
+    color: #d7a86e;
+    font-size: 21px;
+}
+
+nav a {
+    color: #fff8f0;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #d7a86e;
+}
+
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    background-color: #fffaf5;
+    border: 1px solid #dfcbb8;
+    border-radius: 10px;
+}
+
+section h2 {
+    margin-top: 0;
+    color: #5d4037;
+    font-size: 30px;
+}
+
+.intro {
+    margin-bottom: 25px;
+    padding: 30px;
+    text-align: center;
+    border-top: 5px solid #d7a86e;
+}
+
+.intro p,
+.dato p {
+    color: #6d5147;
+    line-height: 1.7;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 25px;
+}
+
+.datos-contacto,
+.formulario-contenedor {
+    padding: 30px;
+}
+
+.datos-contacto h2,
+.formulario-contenedor h2 {
+    text-align: center;
+}
+
+.dato {
+    margin-top: 25px;
+    padding-left: 15px;
+    border-left: 4px solid #a1887f;
+}
+
+.dato h3 {
+    margin: 0;
+    color: #4e342e;
+}
+
+.dato p {
+    margin-bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 15px 0 7px;
+    color: #5d4037;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dfcbb8;
+    border-radius: 5px;
+    background-color: #f8f1ea;
+    color: #3e2723;
+    font: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #d7a86e;
+    border-color: #8d5b3c;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    align-self: center;
+    margin-top: 25px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #8d5b3c;
+    color: #fff8f0;
+    cursor: pointer;
+    font: inherit;
+}
+
+button:hover {
+    background-color: #6d4030;
+}
+
+footer {
+    background-color: #3e2723;
+    color: #f5eee6;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 8px;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 36px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
+
+    main {
+        width: 95%;
+        margin: 25px auto;
+    }
+
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .intro,
+    .datos-contacto,
+    .formulario-contenedor {
+        padding: 20px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+}
