@@ -3,42 +3,50 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="index.css">
     <title>Rita Cafetería</title>
 </head>
 
 <body>
 
     <header>
-        <h1>Rita Cafetería</h1>
-        <p>Cafetería de Especialidad</p>
+        <a class="logo" href="index.html" aria-label="Rita Cafetería, ir al inicio">
+            <img src="imagenes/logo-rita.svg" alt="" width="94" height="94">
+        </a>
+        <div class="marca">
+            <h1>Rita Cafetería</h1>
+            <p>Cafetería de Especialidad</p>
+        </div>
 
         <nav>
             <a href="index.html">Inicio</a>
             <a href="carta.html">Carta</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="contacto.html">Contacto</a>
-            <a href="login.html">Ingresar</a>
         </nav>
     </header>
 
     <main>
 
         <section class="hero">
-            <h2>Bienvenidos a Rita</h2>
+            <div class="hero-texto">
+                <h2>Bienvenidos a Rita</h2>
 
-            <p>
-                Café de especialidad, panadería artesanal y sabores simples
-                hechos con dedicación.
-            </p>
+                <p>
+                    Café de especialidad, panadería artesanal y sabores simples
+                    hechos con dedicación.
+                </p>
 
-            <p>
-                Un espacio pensado para disfrutar buenos cafés,
-                algo rico para acompañar y tomarse el tiempo de una pausa.
-            </p>
+                <p>
+                    Un espacio pensado para disfrutar buenos cafés,
+                    algo rico para acompañar y tomarse el tiempo de una pausa.
+                </p>
 
-            <a href="carta.html">Ver nuestra carta</a>
+                <a href="carta.html">Ver nuestra carta</a>
+            </div>
+
+            <img class="imagen-seccion" src="imagenes/cafe-y-croissant.webp" alt="Cappuccino y croissant sobre una mesa de madera" width="1536" height="1024">
         </section>
 
         <section class="destacados">
@@ -59,25 +67,18 @@
             <h3>Opciones para todos</h3>
             <p>
                 Bebidas calientes, bebidas frías, desayunos,
-                meriendas y opciones saladas.
+                meriendas, opciones saladas y productos sin TACC.
             </p>
-        </section>
-
-        <section class="visita">
-            <h2>Visitá Rita</h2>
-
-            <p>Av. Poeta Lugones 3321</p>
-            <p>Lunes a Sábado: 8:00 - 21:00</p>
-            <p>Domingo: 9:00 - 18:00</p>
-
-            <a href="contacto.html">Más información</a>
         </section>
 
     </main>
 
     <footer>
-        <p>Rita Cafetería</p>
-        <p>Córdoba, Argentina</p>
+        <h2>Visitá Rita</h2>
+        <p>Av. Poeta Lugones 3321 · Córdoba, Argentina</p>
+        <p>Lunes a sábado: 8:00 - 21:00</p>
+        <p>Domingo: 9:00 - 18:00</p>
+        <a href="contacto.html">Más información</a>
     </footer>
 
 </body>

@@ -5,22 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto - Rita Cafetería</title>
-    <link rel="stylesheet" href="contacto.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="contacto.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Rita Cafetería</h1>
-        <p>Cafetería de Especialidad</p>
+        <a class="logo" href="index.html" aria-label="Rita Cafetería, ir al inicio">
+            <img src="imagenes/logo-rita.svg" alt="" width="94" height="94">
+        </a>
+        <div class="marca">
+            <h1>Rita Cafetería</h1>
+            <p>Cafetería de Especialidad</p>
+        </div>
 
         <nav>
             <a href="index.html">Inicio</a>
             <a href="carta.html">Carta</a>
             <a href="nosotros.html">Nosotros</a>
             <a href="contacto.html">Contacto</a>
-            <a href="login.html">Ingresar</a>
         </nav>
     </header>
 
@@ -29,7 +33,8 @@
             <h2>Contacto</h2>
             <p>
                 ¿Querés hacer una consulta, reservar una mesa o dejarnos tu opinión?
-                Escribinos y te responderemos lo antes posible.
+                Podés contactarnos por teléfono o email. Si ya nos visitaste,
+                también podés responder una encuesta breve sobre tu experiencia.
             </p>
         </section>
 
@@ -53,30 +58,59 @@
                 </div>
             </section>
 
-            <section class="formulario-contenedor">
-                <h2>Escribinos</h2>
+            <section class="encuesta-contenedor">
+                <h2>Contanos tu experiencia</h2>
+                <p>Calificá cada aspecto de 1 a 5 estrellas y envianos tu opinión.</p>
 
-                <form action="#" method="post">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                <form id="encuesta" action="https://formspree.io/f/mdeagykg" method="POST">
+                    <fieldset>
+                        <legend>Comida y bebida</legend>
+                        <div class="estrellas">
+                            <input type="radio" id="comida-5" name="comida-bebida" value="5" required><label for="comida-5" aria-label="5 estrellas">★</label>
+                            <input type="radio" id="comida-4" name="comida-bebida" value="4"><label for="comida-4" aria-label="4 estrellas">★</label>
+                            <input type="radio" id="comida-3" name="comida-bebida" value="3"><label for="comida-3" aria-label="3 estrellas">★</label>
+                            <input type="radio" id="comida-2" name="comida-bebida" value="2"><label for="comida-2" aria-label="2 estrellas">★</label>
+                            <input type="radio" id="comida-1" name="comida-bebida" value="1"><label for="comida-1" aria-label="1 estrella">★</label>
+                        </div>
+                    </fieldset>
 
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                    <fieldset>
+                        <legend>Tiempo de espera</legend>
+                        <div class="estrellas">
+                            <input type="radio" id="espera-5" name="espera" value="5" required><label for="espera-5" aria-label="5 estrellas">★</label>
+                            <input type="radio" id="espera-4" name="espera" value="4"><label for="espera-4" aria-label="4 estrellas">★</label>
+                            <input type="radio" id="espera-3" name="espera" value="3"><label for="espera-3" aria-label="3 estrellas">★</label>
+                            <input type="radio" id="espera-2" name="espera" value="2"><label for="espera-2" aria-label="2 estrellas">★</label>
+                            <input type="radio" id="espera-1" name="espera" value="1"><label for="espera-1" aria-label="1 estrella">★</label>
+                        </div>
+                    </fieldset>
 
-                    <label for="mensaje">Mensaje</label>
-                    <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribí tu mensaje" required></textarea>
+                    <fieldset>
+                        <legend>Atención</legend>
+                        <div class="estrellas">
+                            <input type="radio" id="atencion-5" name="atencion" value="5" required><label for="atencion-5" aria-label="5 estrellas">★</label>
+                            <input type="radio" id="atencion-4" name="atencion" value="4"><label for="atencion-4" aria-label="4 estrellas">★</label>
+                            <input type="radio" id="atencion-3" name="atencion" value="3"><label for="atencion-3" aria-label="3 estrellas">★</label>
+                            <input type="radio" id="atencion-2" name="atencion" value="2"><label for="atencion-2" aria-label="2 estrellas">★</label>
+                            <input type="radio" id="atencion-1" name="atencion" value="1"><label for="atencion-1" aria-label="1 estrella">★</label>
+                        </div>
+                    </fieldset>
 
-                    <button type="submit">Enviar mensaje</button>
+                    <button type="submit">Enviar encuesta</button>
+                    <p id="resultado-encuesta" role="status"></p>
                 </form>
             </section>
         </div>
     </main>
 
     <footer>
-        <p>Rita Cafetería</p>
-        <p>Córdoba, Argentina</p>
+        <h2>Visitá Rita</h2>
+        <p>Av. Poeta Lugones 3321 · Córdoba, Argentina</p>
+        <p>Lunes a sábado: 8:00 - 21:00</p>
+        <p>Domingo: 9:00 - 18:00</p>
     </footer>
 
+    <script src="encuesta.js"></script>
 </body>
 
 </html>
