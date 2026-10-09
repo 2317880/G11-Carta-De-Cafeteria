@@ -4,15 +4,20 @@
 <head>
     <meta charset="UTF-8">
     <title>Nosotros - Rita Cafetería</title>
-    <link rel="stylesheet" href="nosotros.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="nosotros.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Rita Cafetería</h1>
-        <p>Cafetería de Especialidad</p>
+        <a class="logo" href="index.html" aria-label="Rita Cafetería, ir al inicio">
+            <img src="imagenes/logo-rita.svg" alt="" width="94" height="94">
+        </a>
+        <div class="marca">
+            <h1>Rita Cafetería</h1>
+            <p>Cafetería de Especialidad</p>
+        </div>
 
         <nav>
             <a href="index.html">Inicio</a>
@@ -68,26 +73,32 @@
             </ul>
         </section>
 
-        <section class="nosotros">
-            <h2>Nuestro Espacio</h2>
+        <section class="nosotros espacio">
+            <div class="espacio-texto">
+                <h2>Nuestro Espacio</h2>
 
-            <p>
-                Rita está pensado como un lugar cómodo para encontrarse,
-                estudiar, trabajar o simplemente disfrutar de un café.
-            </p>
+                <p>
+                    Rita está pensado como un lugar cómodo para encontrarse,
+                    estudiar, trabajar o simplemente disfrutar de un café.
+                </p>
 
-            <p>
-                Queremos que cada persona que nos visite encuentre un ambiente
-                cálido, relajado y agradable.
-            </p>
+                <p>
+                    Queremos que cada persona que nos visite encuentre un ambiente
+                    cálido, relajado y agradable.
+                </p>
+            </div>
+
+            <img class="imagen-seccion" src="imagenes/interior-cafeteria.webp" alt="Interior cálido de la cafetería con mesas de madera y plantas" width="1536" height="1024" loading="lazy">
         </section>
 
     </main>
 
     <footer>
-        <p>Rita Cafetería</p>
-        <p>Av. Poeta Lugones 3321</p>
-        <p>Lunes a Sábado: 8:00 - 21:00 | Domingo: 9:00 - 18:00</p>
+        <h2>Visitá Rita</h2>
+        <p>Av. Poeta Lugones 3321 · Córdoba, Argentina</p>
+        <p>Lunes a sábado: 8:00 - 21:00</p>
+        <p>Domingo: 9:00 - 18:00</p>
+        <a href="contacto.html">Más información</a>
     </footer>
 
 </body>

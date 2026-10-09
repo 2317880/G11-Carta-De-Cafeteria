@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rita Cafetería</title>
-    <link rel="stylesheet" href="carta.css">
     <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="carta.css">
 </head>
 
 <body>
 
     <header>
-        <h1>Rita Cafetería</h1>
-        <p>Cafetería de Especialidad</p>
+        <a class="logo" href="index.html" aria-label="Rita Cafetería, ir al inicio">
+            <img src="imagenes/logo-rita.svg" alt="" width="94" height="94">
+        </a>
+        <div class="marca">
+            <h1>Rita Cafetería</h1>
+            <p>Cafetería de Especialidad</p>
+        </div>
         <nav>
             <a href="index.html">Inicio</a>
             <a href="carta.html">Carta</a>
@@ -63,33 +68,39 @@
             <h2>Bebidas Calientes</h2>
 
             <article class="producto" data-tacc="sin">
-                <h3>Café Americano - $4.500 ARS</h3>
+                <div class="producto-encabezado"><h3>Café Americano</h3><span class="precio">$4.500 ARS</span></div>
                 <p>Espresso doble de especialidad con agua purificada caliente.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
 
             <article class="producto" data-tacc="sin">
-                <h3>Cappuccino - $5.500 ARS</h3>
+                <div class="producto-encabezado"><h3>Cappuccino</h3><span class="precio">$5.500 ARS</span></div>
                 <p>Espresso doble, leche vaporizada y una densa capa de microespuma.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
 
             <article class="producto" data-tacc="sin">
-                <h3>Café Latte - $5.800 ARS</h3>
+                <div class="producto-encabezado"><h3>Café Latte</h3><span class="precio">$5.800 ARS</span></div>
                 <p>Espresso suave con abundante leche sedosa vaporizada.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
 
             <article class="producto" data-tacc="sin">
-                <h3>Moka - $6.200 ARS</h3>
-                <p>Espresso con chocolate artesanal sin TACC, leche vaporizada y cacao.</p>
+                <div class="producto-encabezado"><h3>Moka</h3><span class="precio">$6.200 ARS</span></div>
+                <p>Espresso con chocolate artesanal, leche vaporizada y cacao.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
 
             <article class="producto" data-tacc="sin">
-                <h3>Chocolate Caliente - $5.000 ARS</h3>
-                <p>Chocolate semiamargo sin TACC molido a piedra con pizca de canela.</p>
+                <div class="producto-encabezado"><h3>Chocolate Caliente</h3><span class="precio">$5.000 ARS</span></div>
+                <p>Chocolate semiamargo molido a piedra con pizca de canela.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
 
             <article class="producto" data-tacc="sin">
-                <h3>Té - $4.500 ARS</h3>
+                <div class="producto-encabezado"><h3>Té</h3><span class="precio">$4.500 ARS</span></div>
                 <p>Selección premium: Matcha, Rooibos, Té Verde o Manzanilla-Lavanda.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
         </section>
 
@@ -97,53 +108,82 @@
             <h2>Bebidas Frías</h2>
 
             <article class="producto" data-tacc="sin">
-                <h3>Affogato - $6.500 ARS</h3>
-                <p>Helado de vainilla sin TACC con café espresso.</p>
+                <div class="producto-encabezado"><h3>Affogato</h3><span class="precio">$6.500 ARS</span></div>
+                <p>Helado de vainilla con café espresso.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
 
             <article class="producto" data-tacc="sin">
-                <h3>Iced Latte - $5.800 ARS</h3>
+                <div class="producto-encabezado"><h3>Iced Latte</h3><span class="precio">$5.800 ARS</span></div>
                 <p>Espresso servido sobre leche fría y cubos de hielo artesanal.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
 
             <article class="producto" data-tacc="sin">
-                <h3>Limonada Rita - $4.800 ARS</h3>
+                <div class="producto-encabezado"><h3>Limonada Rita</h3><span class="precio">$4.800 ARS</span></div>
                 <p>Limón amarillo fresco infusionado con jarabe de lavanda orgánica.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
 
             <article class="producto" data-tacc="sin">
-                <h3>Smoothie - $6.000 ARS</h3>
+                <div class="producto-encabezado"><h3>Smoothie</h3><span class="precio">$6.000 ARS</span></div>
                 <p>Variedades de naranja, mango, frutilla, arándanos y kiwi.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
             </article>
         </section>
 
         <section class="categoria" data-categoria="panaderia">
             <h2>Panadería y Postres</h2>
 
-            <ul>
-                <li class="producto" data-tacc="con">Croissant Rellenos - $4.800 ARS</li>
-                <li class="producto" data-tacc="con">Carrot cake de naranja - $7.000 ARS</li>
-                <li class="producto" data-tacc="sin">Brownie Rita sin TACC - $6.000 ARS</li>
-                <li class="producto" data-tacc="con">Cheesecake de Arándanos - $7.000 ARS</li>
-                <li class="producto" data-tacc="con">Medialunas y Facturas - $1.200 ARS</li>
-            </ul>
+            <article class="producto" data-tacc="con">
+                <div class="producto-encabezado"><h3>Croissants rellenos</h3><span class="precio">$4.800 ARS</span></div>
+                <p>Masa hojaldrada horneada a diario, rellena de crema pastelera o dulce de leche.</p>
+            </article>
+            <article class="producto" data-tacc="con">
+                <div class="producto-encabezado"><h3>Carrot cake de naranja</h3><span class="precio">$7.000 ARS</span></div>
+                <p>Bizcocho húmedo de zanahoria y naranja, cubierto con crema suave y especias.</p>
+            </article>
+            <article class="producto" data-tacc="sin">
+                <div class="producto-encabezado"><h3>Brownie Rita</h3><span class="precio">$6.000 ARS</span></div>
+                <p>Brownie de chocolate intenso elaborado con harina de almendras y centro húmedo.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
+            </article>
+            <article class="producto" data-tacc="con">
+                <div class="producto-encabezado"><h3>Cheesecake de Arándanos</h3><span class="precio">$7.000 ARS</span></div>
+                <p>Base crocante de galletas, crema de queso suave y cobertura de arándanos.</p>
+            </article>
+            <article class="producto" data-tacc="con">
+                <div class="producto-encabezado"><h3>Medialunas y Facturas</h3><span class="precio">$1.200 ARS</span></div>
+                <p>Horneadas cada mañana, ideales para acompañar un café o té.</p>
+            </article>
         </section>
 
         <section class="categoria" data-categoria="salados">
             <h2>Snacks & Salados</h2>
 
-            <ul>
-                <li class="producto" data-tacc="con">Tostado J&Q - $9.100 ARS</li>
-                <li class="producto" data-tacc="con">Tostón de huevo y palta - $9.000 ARS</li>
-                <li class="producto" data-tacc="sin">Plato de frutas de temporada - $4.900 ARS</li>
-            </ul>
+            <article class="producto" data-tacc="con">
+                <div class="producto-encabezado"><h3>Tostado J&amp;Q</h3><span class="precio">$9.100 ARS</span></div>
+                <p>Pan tostado con jamón y queso fundido.</p>
+            </article>
+            <article class="producto" data-tacc="con">
+                <div class="producto-encabezado"><h3>Tostón de huevo y palta</h3><span class="precio">$9.000 ARS</span></div>
+                <p>Pan de campo tostado con palta fresca y huevo a punto.</p>
+            </article>
+            <article class="producto" data-tacc="sin">
+                <div class="producto-encabezado"><h3>Plato de frutas de temporada</h3><span class="precio">$4.900 ARS</span></div>
+                <p>Selección de frutas frescas cortadas al momento.</p>
+                <span class="etiqueta-tacc">Sin TACC</span>
+            </article>
         </section>
 
     </main>
 
     <footer>
-        <p>Av Poeta Lugones 3321</p>
-        <p>Lunes a Sábado: 8:00 - 21:00 | Domingo: 9:00 - 18:00</p>
+        <h2>Visitá Rita</h2>
+        <p>Av. Poeta Lugones 3321 · Córdoba, Argentina</p>
+        <p>Lunes a sábado: 8:00 - 21:00</p>
+        <p>Domingo: 9:00 - 18:00</p>
+        <a href="contacto.html">Más información</a>
     </footer>
 
     <script src="carta.js"></script>
