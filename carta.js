@@ -4,6 +4,14 @@ const filtroTacc = document.querySelector("#filtrar-tacc");
 const resultado = document.querySelector("#resultado-filtros");
 const categorias = document.querySelectorAll(".categoria");
 
+const filtrosGuardados = sessionStorage.getItem("filtrosCarta");
+if (filtrosGuardados) {
+    const filtros = JSON.parse(filtrosGuardados);
+    buscar.value = filtros.busqueda || "";
+    filtroCategoria.value = filtros.categoria || "todas";
+    filtroTacc.value = filtros.tacc || "todos";
+}
+
 function normalizar(texto) {
     return texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
 }
@@ -32,7 +40,16 @@ function filtrarProductos() {
     resultado.textContent = total === 0 ? "No se encontraron productos con esos filtros." : total + " producto" + (total === 1 ? "" : "s") + " encontrado" + (total === 1 ? "" : "s") + ".";
 }
 
-buscar.addEventListener("input", filtrarProductos);
-filtroCategoria.addEventListener("change", filtrarProductos);
-filtroTacc.addEventListener("change", filtrarProductos);
+function actualizarFiltros() {
+    sessionStorage.setItem("filtrosCarta", JSON.stringify({
+        busqueda: buscar.value,
+        categoria: filtroCategoria.value,
+        tacc: filtroTacc.value
+    }));
+    filtrarProductos();
+}
+
+buscar.addEventListener("input", actualizarFiltros);
+filtroCategoria.addEventListener("change", actualizarFiltros);
+filtroTacc.addEventListener("change", actualizarFiltros);
 filtrarProductos();
