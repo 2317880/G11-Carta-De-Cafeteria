@@ -63,7 +63,8 @@ section h2 {
 }
 
 .intro p,
-.dato p {
+.dato p,
+.encuesta-contenedor p {
     color: #6d5147;
     line-height: 1.7;
 }
@@ -75,12 +76,12 @@ section h2 {
 }
 
 .datos-contacto,
-.formulario-contenedor {
+.encuesta-contenedor {
     padding: 30px;
 }
 
 .datos-contacto h2,
-.formulario-contenedor h2 {
+.encuesta-contenedor h2 {
     text-align: center;
 }
 
@@ -104,31 +105,59 @@ form {
     flex-direction: column;
 }
 
-label {
-    margin: 15px 0 7px;
+fieldset {
+    margin: 15px 0 0;
+    padding: 0;
+    border: 0;
+}
+
+legend {
     color: #5d4037;
     font-weight: bold;
 }
 
-input,
-textarea {
-    width: 100%;
+.estrellas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 4px;
+}
+
+.estrellas input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+}
+
+.estrellas label {
+    color: #a1887f;
+    font-size: 36px;
+    cursor: pointer;
+}
+
+.estrellas input:checked ~ label,
+.estrellas label:hover,
+.estrellas label:hover ~ label {
+    color: #b26a00;
+}
+
+.estrellas input:focus-visible + label {
+    outline: 2px solid #5d4037;
+    border-radius: 3px;
+}
+
+#resultado-encuesta:not(:empty) {
     padding: 12px;
-    border: 1px solid #dfcbb8;
     border-radius: 5px;
-    background-color: #f8f1ea;
-    color: #3e2723;
-    font: inherit;
 }
 
-input:focus,
-textarea:focus {
-    outline: 2px solid #d7a86e;
-    border-color: #8d5b3c;
+#resultado-encuesta.exito {
+    background-color: #e3f0dd;
 }
 
-textarea {
-    resize: vertical;
+#resultado-encuesta.error {
+    background-color: #f9e7e4;
 }
 
 button {
@@ -145,6 +174,10 @@ button {
 
 button:hover {
     background-color: #6d4030;
+}
+
+button:disabled {
+    opacity: 0.6;
 }
 
 footer {
@@ -183,7 +216,7 @@ footer p {
 
     .intro,
     .datos-contacto,
-    .formulario-contenedor {
+    .encuesta-contenedor {
         padding: 20px;
     }
 
