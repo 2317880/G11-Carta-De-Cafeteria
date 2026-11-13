@@ -1,0 +1,148 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "nombre": "Café Americano",
+      "categoria": "calientes",
+      "precio": 4500,
+      "descripcion": "Espresso doble de especialidad con agua purificada caliente.",
+      "tacc": "sin"
+    },
+    {
+      "id": 2,
+      "nombre": "Cappuccino",
+      "categoria": "calientes",
+      "precio": 5500,
+      "descripcion": "Espresso doble, leche vaporizada y una densa capa de microespuma.",
+      "tacc": "sin"
+    },
+    {
+      "id": 3,
+      "nombre": "Café Latte",
+      "categoria": "calientes",
+      "precio": 5800,
+      "descripcion": "Espresso suave con abundante leche sedosa vaporizada.",
+      "tacc": "sin"
+    },
+    {
+      "id": 4,
+      "nombre": "Moka",
+      "categoria": "calientes",
+      "precio": 6200,
+      "descripcion": "Espresso con chocolate artesanal, leche vaporizada y cacao.",
+      "tacc": "sin"
+    },
+    {
+      "id": 5,
+      "nombre": "Chocolate Caliente",
+      "categoria": "calientes",
+      "precio": 5000,
+      "descripcion": "Chocolate semiamargo molido a piedra con pizca de canela.",
+      "tacc": "sin"
+    },
+    {
+      "id": 6,
+      "nombre": "Té",
+      "categoria": "calientes",
+      "precio": 4500,
+      "descripcion": "Selección premium: Matcha, Rooibos, Té Verde o Manzanilla-Lavanda.",
+      "tacc": "sin"
+    },
+    {
+      "id": 7,
+      "nombre": "Affogato",
+      "categoria": "frias",
+      "precio": 6500,
+      "descripcion": "Helado de vainilla con café espresso.",
+      "tacc": "sin"
+    },
+    {
+      "id": 8,
+      "nombre": "Iced Latte",
+      "categoria": "frias",
+      "precio": 5800,
+      "descripcion": "Espresso servido sobre leche fría y cubos de hielo artesanal.",
+      "tacc": "sin"
+    },
+    {
+      "id": 9,
+      "nombre": "Limonada Rita",
+      "categoria": "frias",
+      "precio": 4800,
+      "descripcion": "Limón amarillo fresco infusionado con jarabe de lavanda orgánica.",
+      "tacc": "sin"
+    },
+    {
+      "id": 10,
+      "nombre": "Smoothie",
+      "categoria": "frias",
+      "precio": 6000,
+      "descripcion": "Variedades de naranja, mango, frutilla, arándanos y kiwi.",
+      "tacc": "sin"
+    },
+    {
+      "id": 11,
+      "nombre": "Croissants rellenos",
+      "categoria": "panaderia",
+      "precio": 4800,
+      "descripcion": "Masa hojaldrada horneada a diario, rellena de crema pastelera o dulce de leche.",
+      "tacc": "con"
+    },
+    {
+      "id": 12,
+      "nombre": "Carrot cake de naranja",
+      "categoria": "panaderia",
+      "precio": 7000,
+      "descripcion": "Bizcocho húmedo de zanahoria y naranja, cubierto con crema suave y especias.",
+      "tacc": "con"
+    },
+    {
+      "id": 13,
+      "nombre": "Brownie Rita",
+      "categoria": "panaderia",
+      "precio": 6000,
+      "descripcion": "Brownie de chocolate intenso elaborado con harina de almendras y centro húmedo.",
+      "tacc": "sin"
+    },
+    {
+      "id": 14,
+      "nombre": "Cheesecake de Arándanos",
+      "categoria": "panaderia",
+      "precio": 7000,
+      "descripcion": "Base crocante de galletas, crema de queso suave y cobertura de arándanos.",
+      "tacc": "con"
+    },
+    {
+      "id": 15,
+      "nombre": "Medialunas y Facturas",
+      "categoria": "panaderia",
+      "precio": 1200,
+      "descripcion": "Horneadas cada mañana, ideales para acompañar un café o té.",
+      "tacc": "con"
+    },
+    {
+      "id": 16,
+      "nombre": "Tostado J&Q",
+      "categoria": "salados",
+      "precio": 9100,
+      "descripcion": "Pan tostado con jamón y queso fundido.",
+      "tacc": "con"
+    },
+    {
+      "id": 17,
+      "nombre": "Tostón de huevo y palta",
+      "categoria": "salados",
+      "precio": 9000,
+      "descripcion": "Pan de campo tostado con palta fresca y huevo a punto.",
+      "tacc": "con"
+    },
+    {
+      "id": 18,
+      "nombre": "Plato de frutas de temporada",
+      "categoria": "salados",
+      "precio": 4900,
+      "descripcion": "Selección de frutas frescas cortadas al momento.",
+      "tacc": "sin"
+    }
+  ]
+}

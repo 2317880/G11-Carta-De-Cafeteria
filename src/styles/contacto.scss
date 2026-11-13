@@ -1,0 +1,172 @@
+.pagina-contacto {
+  .intro {
+    margin-bottom: 25px;
+    padding: 30px;
+    text-align: center;
+
+    p {
+      color: #6d5147;
+      line-height: 1.7;
+    }
+  }
+
+  .contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.3fr;
+    gap: 25px;
+  }
+
+  .datos-contacto,
+  .encuesta-contenedor {
+    padding: 30px;
+    background-color: #fffaf5;
+    border: 1px solid #dfcbb8;
+    border-radius: 10px;
+
+    h2 {
+      color: #5d4037;
+      text-align: center;
+      font-size: 30px;
+      margin-top: 0;
+    }
+  }
+
+  .dato {
+    margin-top: 25px;
+    padding-left: 15px;
+    border-left: 4px solid #a1887f;
+
+    h3 {
+      margin: 0;
+      color: #4e342e;
+    }
+
+    p {
+      margin-bottom: 0;
+      color: #6d5147;
+      line-height: 1.7;
+    }
+  }
+
+  .encuesta-contenedor {
+    > p {
+      color: #6d5147;
+      line-height: 1.7;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    fieldset {
+      margin: 15px 0 0;
+      padding: 0;
+      border: 0;
+    }
+
+    legend {
+      color: #5d4037;
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+  }
+
+  .estrellas {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 4px;
+
+    span {
+      display: flex;
+    }
+
+    input {
+      position: absolute;
+      opacity: 0;
+      width: 1px;
+      height: 1px;
+    }
+
+    label {
+      color: #a1887f;
+      font-size: 36px;
+      cursor: pointer;
+    }
+
+    span:has(input:checked) label,
+    span:has(input:checked) ~ span label,
+    label:hover,
+    label:hover ~ label {
+      color: #b26a00;
+    }
+
+    input:focus-visible + label {
+      outline: 2px solid #5d4037;
+      border-radius: 3px;
+    }
+  }
+
+  .error-campo {
+    color: #a83232;
+    font-size: 14px;
+    margin: 5px 0;
+  }
+
+  form button {
+    align-self: center;
+    margin-top: 25px;
+    padding: 12px 24px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #8d5b3c;
+    color: #fff8f0;
+    cursor: pointer;
+    font: inherit;
+
+    &:hover {
+      background-color: #6d4030;
+    }
+
+    &:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  }
+
+  .resultado-encuesta {
+    padding: 12px;
+    border-radius: 5px;
+    text-align: center;
+
+    &.exito {
+      background-color: #e3f0dd;
+      color: #315b2c;
+    }
+
+    &.error {
+      background-color: #f9e7e4;
+      color: #a83232;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .pagina-contacto {
+    .contacto-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .intro,
+    .datos-contacto,
+    .encuesta-contenedor {
+      padding: 20px;
+    }
+
+    .datos-contacto h2,
+    .encuesta-contenedor h2 {
+      font-size: 25px;
+    }
+  }
+}
